@@ -1,0 +1,25 @@
+2026-10-23 16:04:34,182 | INFO    | feb95eab | Inicio: comando=ejecutar fecha=2026-10-23
+2026-10-23 16:04:34,186 | INFO    | feb95eab | Landing: Excel guardado en landing/solicitudes/2026-10-23/9422c59ebc43_solicitudes.xlsx
+2026-10-23 16:04:34,219 | INFO    | feb95eab | Extracción: abriendo https://www.sii.cl/valores_y_fechas/uf/uf2026.htm
+2026-10-23 16:04:57,644 | INFO    | feb95eab | Landing: UF 2026 guardado en landing/sii/2026-10-23/ba25ad528361_uf2026.html (313 valores, último 2026-11-09)
+2026-10-23 16:04:57,644 | INFO    | feb95eab | Extracción: abriendo https://www.sii.cl/valores_y_fechas/dolar/dolar2026.htm
+2026-10-23 16:05:25,507 | INFO    | feb95eab | Landing: USD 2026 guardado en landing/sii/2026-10-23/c3eafce42967_dolar2026.html (189 valores, último 2026-10-01)
+2026-10-23 16:05:25,510 | INFO    | feb95eab | Landing: snapshot 2026-10-23_9422c59ebc43 publicado
+2026-10-23 16:05:25,751 | INFO    | feb95eab | Bronce: 30 filas del Excel, 313 valores UF, 189 valores dólar
+2026-10-23 16:05:25,754 | INFO    | feb95eab | Silver: 19 válidas, 11 rechazadas por validación
+2026-10-23 16:05:25,755 | INFO    | feb95eab | Gold: 17 solicitudes convertidas, 2 sin tasa vigente
+2026-10-23 16:05:25,756 | WARNING | feb95eab | Excepción de negocio | fila 7 | SOL-1006 | ID_CONFLICTO | ID_Solicitud: el mismo ID tiene datos distintos en las filas 7, 30
+2026-10-23 16:05:25,756 | WARNING | feb95eab | Excepción de negocio | fila 8 | SOL-1007 | RUT_INVALIDO | RUT: dígito verificador incorrecto (9.215.279-1, debería ser 0)
+2026-10-23 16:05:25,756 | WARNING | feb95eab | Excepción de negocio | fila 9 | SOL-1008 | EMAIL_INVALIDO | Email: formato de email inválido (tomas.silva.correo.cl)
+2026-10-23 16:05:25,756 | WARNING | feb95eab | Excepción de negocio | fila 10 | SOL-1009 | MONTO_INVALIDO | Monto_CLP: el monto debe ser mayor a cero (-350000)
+2026-10-23 16:05:25,756 | WARNING | feb95eab | Excepción de negocio | fila 18 | SOL-1017 | CAMPO_VACIO | Monto_CLP: campo obligatorio vacío
+2026-10-23 16:05:25,757 | WARNING | feb95eab | Excepción de negocio | fila 20 | SOL-1019 | CAMPO_VACIO | RUT: campo obligatorio vacío
+2026-10-23 16:05:25,757 | WARNING | feb95eab | Excepción de negocio | fila 21 | SOL-1020 | MONTO_INVALIDO | Monto_CLP: monto no numérico (un millón)
+2026-10-23 16:05:25,758 | WARNING | feb95eab | Excepción de negocio | fila 24 | SOL-1022 | MONTO_INVALIDO | Monto_CLP: el monto debe ser mayor a cero (0)
+2026-10-23 16:05:25,759 | WARNING | feb95eab | Excepción de negocio | fila 25 | SOL-1023 | FECHA_INVALIDA | Fecha_Solicitud: la fecha no existe (31-09-2026)
+2026-10-23 16:05:25,759 | WARNING | feb95eab | Excepción de negocio | fila 29 | SOL-1002 | ID_DUPLICADO | ID_Solicitud: duplicado exacto de la fila 3
+2026-10-23 16:05:25,759 | WARNING | feb95eab | Excepción de negocio | fila 30 | SOL-1006 | ID_CONFLICTO | ID_Solicitud: el mismo ID tiene datos distintos en las filas 7, 30
+2026-10-23 16:05:25,759 | WARNING | feb95eab | Excepción de negocio | fila 31 | SOL-1029 | TASA_NO_DISPONIBLE | Fecha_Solicitud: el SII aún no publica el dólar del 02-10-2026 (último publicado: 01-10-2026)
+2026-10-23 16:05:25,759 | WARNING | feb95eab | Excepción de negocio | fila 32 | SOL-1030 | TASA_NO_DISPONIBLE | Fecha_Solicitud: el SII aún no publica el dólar del 02-10-2026 (último publicado: 01-10-2026)
+2026-10-23 16:05:25,815 | INFO    | feb95eab | Carga: snapshot 2026-10-23_9422c59ebc43 publicado en SQLite
+2026-10-23 16:05:26,097 | INFO    | feb95eab | Fin: estado=OK_CON_CUARENTENA leídas=30 válidas=19 cuarentena=13 gold=17

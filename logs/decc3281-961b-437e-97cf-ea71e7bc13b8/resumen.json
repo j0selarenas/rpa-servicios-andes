@@ -1,0 +1,38 @@
+{
+  "run_id": "decc3281-961b-437e-97cf-ea71e7bc13b8",
+  "comando": "ejecutar",
+  "fecha_proceso": "2026-10-23",
+  "inicio": "2026-10-23T19:05:27+00:00",
+  "estado": "OK_CON_CUARENTENA",
+  "snapshot_id": "2026-10-23_9422c59ebc43",
+  "landing_reutilizado": true,
+  "registros_leidos": 30,
+  "registros_validos": 19,
+  "registros_cuarentena": 13,
+  "registros_gold": 17,
+  "cuarentena_por_codigo": {
+    "ID_CONFLICTO": 2,
+    "RUT_INVALIDO": 1,
+    "EMAIL_INVALIDO": 1,
+    "MONTO_INVALIDO": 3,
+    "CAMPO_VACIO": 2,
+    "FECHA_INVALIDA": 1,
+    "ID_DUPLICADO": 1,
+    "TASA_NO_DISPONIBLE": 2
+  },
+  "tasas": {
+    "UF": {
+      "valores": 313,
+      "desde": "2026-01-01",
+      "hasta": "2026-11-09"
+    },
+    "USD": {
+      "valores": 189,
+      "desde": "2026-01-02",
+      "hasta": "2026-10-01"
+    }
+  },
+  "salidas": "outputs/decc3281-961b-437e-97cf-ea71e7bc13b8",
+  "fin": "2026-10-23T19:05:27+00:00",
+  "log": "logs/decc3281-961b-437e-97cf-ea71e7bc13b8/ejecucion.log"
+}

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="530" viewBox="0 0 1000 530" font-family="Segoe UI, Arial, sans-serif">
+  <title>Arquitectura del robot de solicitudes</title>
+  <defs>
+    <marker id="flecha" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="530" fill="#ffffff"/>
+
+  <!-- Fuentes -->
+  <rect x="40" y="30" width="250" height="60" rx="6" fill="#f2f2f2" stroke="#666"/>
+  <text x="56" y="55" font-size="15" font-weight="bold" fill="#222">solicitudes.xlsx</text>
+  <text x="56" y="76" font-size="13" fill="#444">archivo diario de operaciones</text>
+
+  <rect x="330" y="30" width="320" height="60" rx="6" fill="#f2f2f2" stroke="#666"/>
+  <text x="346" y="55" font-size="15" font-weight="bold" fill="#222">sii.cl, Valores y fechas</text>
+  <text x="346" y="76" font-size="13" fill="#444">Playwright + Edge: UF y dólar del año</text>
+
+  <!-- Flechas hacia landing -->
+  <path d="M120 90 V166" stroke="#444" stroke-width="1.6" fill="none" marker-end="url(#flecha)"/>
+  <path d="M490 90 V125 H200 V166" stroke="#444" stroke-width="1.6" fill="none" marker-end="url(#flecha)"/>
+
+  <!-- Capas -->
+  <g fill="#ffffff" stroke="#333" stroke-width="1.4">
+    <rect x="60" y="170" width="190" height="150" rx="6"/>
+    <rect x="290" y="170" width="190" height="150" rx="6"/>
+    <rect x="520" y="170" width="190" height="150" rx="6"/>
+    <rect x="750" y="170" width="210" height="150" rx="6"/>
+  </g>
+  <g font-size="16" font-weight="bold" fill="#1d3557">
+    <text x="76" y="196">1. Landing</text>
+    <text x="306" y="196">2. Bronce</text>
+    <text x="536" y="196">3. Silver</text>
+    <text x="766" y="196">4. Gold</text>
+  </g>
+  <g font-size="13" fill="#333">
+    <text x="76" y="222">Excel y HTML originales</text>
+    <text x="76" y="242">por fuente y fecha</text>
+    <text x="76" y="262">SHA-256 y manifiesto</text>
+    <text x="76" y="282">nunca se sobrescribe</text>
+
+    <text x="306" y="222">tablas en SQLite</text>
+    <text x="306" y="242">valores tal cual (texto)</text>
+    <text x="306" y="262">fuente, archivo, fecha</text>
+    <text x="306" y="282">de carga y run_id</text>
+
+    <text x="536" y="222">RUT, email, monto, fecha</text>
+    <text x="536" y="242">tipos: número y fecha ISO</text>
+    <text x="536" y="262">duplicados por ID</text>
+    <text x="536" y="282">tasas UF y dólar</text>
+
+    <text x="766" y="222">monto en CLP, UF y USD</text>
+    <text x="766" y="242">tasa y fecha usadas</text>
+    <text x="766" y="262">archivo y fila de origen</text>
+    <text x="766" y="282">vista gold_actual</text>
+  </g>
+  <path d="M250 245 H286" stroke="#444" stroke-width="1.6" marker-end="url(#flecha)"/>
+  <path d="M480 245 H516" stroke="#444" stroke-width="1.6" marker-end="url(#flecha)"/>
+  <path d="M710 245 H746" stroke="#444" stroke-width="1.6" marker-end="url(#flecha)"/>
+
+  <!-- Cuarentena -->
+  <rect x="520" y="372" width="190" height="58" rx="6" fill="#fff4e0" stroke="#b07a1e"/>
+  <text x="536" y="396" font-size="14" font-weight="bold" fill="#6b4a0f">silver_cuarentena</text>
+  <text x="536" y="416" font-size="13" fill="#6b4a0f">código y motivo por fila</text>
+  <path d="M615 320 V368" stroke="#b07a1e" stroke-width="1.6" marker-end="url(#flecha)"/>
+  <path d="M790 320 V401 H714" stroke="#b07a1e" stroke-width="1.6" fill="none" marker-end="url(#flecha)"/>
+  <text x="798" y="350" font-size="12" fill="#6b4a0f">sin tasa</text>
+
+  <!-- Consumo -->
+  <rect x="830" y="372" width="130" height="58" rx="6" fill="#eaf3ea" stroke="#3d7a3d"/>
+  <text x="842" y="396" font-size="13" font-weight="bold" fill="#234d23">gold_actual.xlsx</text>
+  <text x="842" y="416" font-size="12" fill="#234d23">Excel / Power BI</text>
+  <path d="M895 320 V368" stroke="#3d7a3d" stroke-width="1.6" marker-end="url(#flecha)"/>
+
+  <!-- Reproceso -->
+  <path d="M155 320 V462 H385 V324" stroke="#1d3557" stroke-width="1.6" stroke-dasharray="6 4" fill="none" marker-end="url(#flecha)"/>
+  <text x="168" y="484" font-size="13" fill="#1d3557">reprocesar --fecha: vuelve a leer landing, sin red</text>
+
+  <text x="40" y="516" font-size="12" fill="#555">Cada ejecución deja logs/&lt;run_id&gt;/ejecucion.log y resumen.json, y outputs/&lt;run_id&gt;/capas.xlsx con el contenido de cada capa.</text>
+</svg>

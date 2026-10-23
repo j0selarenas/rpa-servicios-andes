@@ -1,0 +1,32 @@
+{
+  "snapshot_id": "2026-10-23_9422c59ebc43",
+  "fecha_extraccion": "2026-10-23",
+  "creado_en": "2026-10-23T19:05:25+00:00",
+  "excel": {
+    "ruta": "landing/solicitudes/2026-10-23/9422c59ebc43_solicitudes.xlsx",
+    "sha256": "9422c59ebc43f7ab6c4687b6002d36662b38a6320bbdda41f4ecf61881e74799",
+    "bytes": 11137
+  },
+  "sii": [
+    {
+      "ruta": "landing/sii/2026-10-23/ba25ad528361_uf2026.html",
+      "sha256": "ba25ad5283615440c0a71f5440d5a1c17334f12d51b747f722af83ca479bf25c",
+      "bytes": 52259,
+      "indicador": "UF",
+      "anio": 2026,
+      "url": "https://www.sii.cl/valores_y_fechas/uf/uf2026.htm",
+      "http": 200,
+      "capturado_en": "2026-10-23T19:04:39+00:00"
+    },
+    {
+      "ruta": "landing/sii/2026-10-23/c3eafce42967_dolar2026.html",
+      "sha256": "c3eafce429676ce036206bec65d7e3ffd2f993d9fac8747f98469f696bf92875",
+      "bytes": 48836,
+      "indicador": "USD",
+      "anio": 2026,
+      "url": "https://www.sii.cl/valores_y_fechas/dolar/dolar2026.htm",
+      "http": 200,
+      "capturado_en": "2026-10-23T19:05:00+00:00"
+    }
+  ]
+}

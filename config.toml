@@ -1,0 +1,32 @@
+# Configuración del robot. Las rutas son relativas a este archivo.
+# No hay credenciales aquí: ver README, sección "Credenciales".
+
+[rutas]
+datos = "data"
+base_datos = "data/andes.sqlite3"
+logs = "logs"
+salidas = "outputs"
+
+[entrada]
+hoja = "Solicitudes"
+
+[sii]
+url_uf = "https://www.sii.cl/valores_y_fechas/uf/uf{anio}.htm"
+url_dolar = "https://www.sii.cl/valores_y_fechas/dolar/dolar{anio}.htm"
+
+[navegador]
+# "msedge" usa el Edge instalado en Windows. Vacío = Chromium de Playwright
+# (requiere: python -m playwright install chromium).
+canal = "msedge"
+headless = true
+timeout_ms = 30000
+intentos = 3
+# Espera antes del primer reintento; se duplica en cada intento.
+espera_inicial_s = 2
+
+[negocio]
+zona_horaria = "America/Santiago"
+# Máximo de días corridos que se puede arrastrar un dólar observado.
+dias_max_arrastre_usd = 7
+decimales_uf = 4
+decimales_usd = 2

@@ -1,0 +1,20 @@
+2026-10-23 16:05:27,035 | INFO    | decc3281 | Inicio: comando=ejecutar fecha=2026-10-23
+2026-10-23 16:05:27,037 | INFO    | decc3281 | Este Excel ya fue capturado hoy; se reutiliza el snapshot sin volver al SII
+2026-10-23 16:05:27,182 | INFO    | decc3281 | Bronce: 30 filas del Excel, 313 valores UF, 189 valores dólar
+2026-10-23 16:05:27,195 | INFO    | decc3281 | Silver: 19 válidas, 11 rechazadas por validación
+2026-10-23 16:05:27,196 | INFO    | decc3281 | Gold: 17 solicitudes convertidas, 2 sin tasa vigente
+2026-10-23 16:05:27,200 | WARNING | decc3281 | Excepción de negocio | fila 7 | SOL-1006 | ID_CONFLICTO | ID_Solicitud: el mismo ID tiene datos distintos en las filas 7, 30
+2026-10-23 16:05:27,200 | WARNING | decc3281 | Excepción de negocio | fila 8 | SOL-1007 | RUT_INVALIDO | RUT: dígito verificador incorrecto (9.215.279-1, debería ser 0)
+2026-10-23 16:05:27,200 | WARNING | decc3281 | Excepción de negocio | fila 9 | SOL-1008 | EMAIL_INVALIDO | Email: formato de email inválido (tomas.silva.correo.cl)
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 10 | SOL-1009 | MONTO_INVALIDO | Monto_CLP: el monto debe ser mayor a cero (-350000)
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 18 | SOL-1017 | CAMPO_VACIO | Monto_CLP: campo obligatorio vacío
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 20 | SOL-1019 | CAMPO_VACIO | RUT: campo obligatorio vacío
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 21 | SOL-1020 | MONTO_INVALIDO | Monto_CLP: monto no numérico (un millón)
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 24 | SOL-1022 | MONTO_INVALIDO | Monto_CLP: el monto debe ser mayor a cero (0)
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 25 | SOL-1023 | FECHA_INVALIDA | Fecha_Solicitud: la fecha no existe (31-09-2026)
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 29 | SOL-1002 | ID_DUPLICADO | ID_Solicitud: duplicado exacto de la fila 3
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 30 | SOL-1006 | ID_CONFLICTO | ID_Solicitud: el mismo ID tiene datos distintos en las filas 7, 30
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 31 | SOL-1029 | TASA_NO_DISPONIBLE | Fecha_Solicitud: el SII aún no publica el dólar del 02-10-2026 (último publicado: 01-10-2026)
+2026-10-23 16:05:27,201 | WARNING | decc3281 | Excepción de negocio | fila 32 | SOL-1030 | TASA_NO_DISPONIBLE | Fecha_Solicitud: el SII aún no publica el dólar del 02-10-2026 (último publicado: 01-10-2026)
+2026-10-23 16:05:27,215 | INFO    | decc3281 | Carga: snapshot 2026-10-23_9422c59ebc43 publicado en SQLite
+2026-10-23 16:05:27,490 | INFO    | decc3281 | Fin: estado=OK_CON_CUARENTENA leídas=30 válidas=19 cuarentena=13 gold=17
